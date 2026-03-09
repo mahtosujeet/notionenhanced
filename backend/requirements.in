@@ -1,0 +1,2 @@
+# The top-level packages (installed manually)
+fastapi[standard]
