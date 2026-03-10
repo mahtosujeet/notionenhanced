@@ -3,6 +3,7 @@ import time
 
 from fastapi import FastAPI, Request
 
+from db.init_db import init_db
 from config.logging_config import setup_logging
 from response_models.checkhealth import CheckHealthResponse
 
@@ -13,6 +14,8 @@ logger.info("Logger Config loaded.")
 
 logger.info("Initializing FastAPI...")
 app = FastAPI()
+
+init_db()
 
 @app.middleware("http")
 async def add_process_time_header(request: Request, call_next):
