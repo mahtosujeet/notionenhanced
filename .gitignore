@@ -1,3 +1,6 @@
+.github/
+*.db
+
 # Python
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -363,3 +366,4 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+backend/database.db
