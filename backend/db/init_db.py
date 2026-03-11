@@ -4,6 +4,9 @@ from sqlmodel import SQLModel
 from .engine import engine
 
 import models.user
+import models.drive_files
+import models.sync_mapping
+import models.notion
 
 
 logger = logging.getLogger(__name__)
